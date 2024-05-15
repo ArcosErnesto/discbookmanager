@@ -2,15 +2,16 @@ package com.arcos.ernesto.discbookmanager.service;
 
 import com.arcos.ernesto.discbookmanager.dto.DiscGenreDTO;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 public interface DiscGenreService {
     Flux<DiscGenreDTO> getAllDiscGenres();
 
     Flux<DiscGenreDTO> getDiscGenreById(String id);
 
-    Flux<DiscGenreDTO> getDiscGenreByName(String genreName);
+    DiscGenreDTO getDiscGenreByName(DiscGenreDTO discGenreDTO);
 
-    Flux<DiscGenreDTO> saveDiscGenre(DiscGenreDTO discGenreDTO);
+    Mono<DiscGenreDTO> saveDiscGenre(DiscGenreDTO discGenreDTO);
 
     Flux<DiscGenreDTO> updateDiscGenre(String id, DiscGenreDTO discGenreDTO);
 
