@@ -7,8 +7,6 @@ import java.util.List;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@RequiredArgsConstructor
 public class DiscDTO {
     private String id;
     private String discName;

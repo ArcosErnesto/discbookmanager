@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: discbookmanager
+  data:
+    mongodb:
+      port: 27017
+      database: discbookmanager
+      host: localhost
+
+version: 1.0.0
+
+server:
+  port: 8080

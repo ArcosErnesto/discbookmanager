@@ -11,5 +11,5 @@ import lombok.Setter;
 @AllArgsConstructor
 public class DiscGenreDTO {
     private String id;
-    private String genreName;
+    private String discGenreName;
 }
